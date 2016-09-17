@@ -19,14 +19,13 @@
 function Start(){
     
     for (var i=0;i<10;++i){
-     var a = Create("div");
-     Get("body").appendChild(a);
-     SetID(a,"id","testid"+i);
-     a.innerHTML = "Test DIV [" + i + "]";
+        var a = Create("div");
+        Get("body").appendChild(a);
+        SetID(a,"id","testid"+i);
+        a.innerHTML = "Test DIV [" + i + "]";
     }
     
     for (var i=0;i<10;++i){
-    
         Set("testid"+i,"onclick","Expand('testid"+i+"');");
         var w = i*10 + 50;
         Set("testid"+i,"style","width:"+w+"px");
