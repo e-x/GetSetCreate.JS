@@ -1,4 +1,5 @@
 # GetSetCreate.JS
+
 Simplifying browser DOM 
 
     Create - create the DOM element [document.createElement]
