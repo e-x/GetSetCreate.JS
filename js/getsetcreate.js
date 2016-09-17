@@ -6,9 +6,9 @@ function Create(e){
     
 }
 
-function SetID(e,atr,val){    
+function SetID(e,val){    
 
-    if (e) { e.setAttribute(atr,val); }
+    if (e) { e.setAttribute("id",val); }
 
 }
 
@@ -56,5 +56,4 @@ function SessGet(a){
     }
     
 }
-
-function Drop(){}
+ 
