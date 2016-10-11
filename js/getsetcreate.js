@@ -1,15 +1,16 @@
+/* 
+ *  Simplifying browser DOM 
+ *  
+ *  https://github.com/e-x/GetSetCreate.JS
+ */
 
 
-function Create(e){
+function Create(e,id){    
+ 
+    var a = document.createElement(e);
+    if (id !="" && id != " " ) {a.setAttribute("id",id);}
+    return a;
     
-    return document.createElement(e);
-    
-}
-
-function SetID(e,val){    
-
-    if (e) { e.setAttribute("id",val); }
-
 }
 
 function Set(e,atr,val){    
