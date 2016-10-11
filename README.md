@@ -2,8 +2,7 @@
 
 Simplifying browser DOM 
 
-    Create - create the DOM element [document.createElement]
-    SetID - Set ID of the created element [setAttribute]
+    Create - create the DOM element [document.createElement] with ID 
     Get - get element by ID [document.getElementById]
     Set - set attribute of element by ID [setAttribute]
 

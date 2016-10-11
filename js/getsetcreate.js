@@ -8,7 +8,7 @@
 function Create(e,id){    
  
     var a = document.createElement(e);
-    if (id !="" && id != " " ) {a.setAttribute("id",id);}
+    if (id != "" && id != " " ) {a.setAttribute("id",id);}
     return a;
     
 }
