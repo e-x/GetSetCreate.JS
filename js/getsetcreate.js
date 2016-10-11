@@ -26,6 +26,7 @@ function Get(e){
     } else { 
         return 0;
     }
+    
 }
 
 function StoreSet(a,b){ 
