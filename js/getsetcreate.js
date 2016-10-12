@@ -1,5 +1,5 @@
 /* 
- *  Simplifying browser DOM 
+ *  Simplifying browser DOM sugar
  *  
  *  https://github.com/e-x/GetSetCreate.JS
  */
