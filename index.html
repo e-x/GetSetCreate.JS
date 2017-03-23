@@ -19,16 +19,14 @@
 function Start(){
     
     for (var i=0;i<10;++i){
-        var a = Create("div");
+        var a = Create("div","testid"+i);
         Get("body").appendChild(a); 
         
      // or  Get("body").appendChild( Create("XXXXX") ); 
         
-        SetID(a,"testid"+i);
         a.innerHTML = "Test DIV [" + i + "]";
         
-        var b = Create("img");
-        SetID(b,"testimg"+i);
+        var b = Create("img",i);
         a.appendChild(b);
         
     }
