@@ -8,3 +8,5 @@ Simplifying browser DOM
 
     StoreSet,StoreGet - localStorage manipulator
     SessSet,SessGet - sessionStorage manipulator
+
+Check index.html for example
