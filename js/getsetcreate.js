@@ -10,7 +10,7 @@ function Create(e,id,cls){
     
 }
 
-// Set element attribute by ID
+
 
 function Set(e,atr,val){    
     var t=Get(e); 
@@ -24,6 +24,8 @@ function Get(e){
     if ( a ) { return a; }
     else { console.log("Cant Get element " + a);
         return "";}
+ 
+ 
 }
 
 // Delete element by ID

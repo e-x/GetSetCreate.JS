@@ -22,11 +22,13 @@ function Start(){
         var a = Create("div","testid"+i);
         Get("body").appendChild(a); 
         
-     // or  Get("body").appendChild( Create("XXXXX") ); 
+     // or Get("body").appendChild( Create("XXXXX","YYY") ); 
+      
+        a.innerHTML = "Test DIV [#" + i + "]";
         
-        a.innerHTML = "Test DIV [" + i + "]";
-        
-        var b = Create("img",i);
+ 
+        var b = Create("img","testimg"+i);
+ 
         a.appendChild(b);
         
     }
