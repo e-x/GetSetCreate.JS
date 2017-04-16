@@ -1,3 +1,8 @@
+//  GetSetCreate 
+/*
+ Author      : e-x @ github
+ */
+
 
 // Create element with setted type,id and class
  
@@ -10,8 +15,6 @@ function Create(e,id,cls){
     
 }
 
-
-
 function Set(e,atr,val){    
     var t=Get(e); 
     if (t) { t.setAttribute(atr,val);  } 
@@ -22,9 +25,10 @@ function Set(e,atr,val){
 function Get(e){ 
     var a = document.getElementById(e);
     if ( a ) { return a; }
-    else { console.log("Cant Get element " + a);
-        return "";}
- 
+    else { 
+        console.error("Cant Get element " + a);
+        return "";
+    }
  
 }
 
@@ -42,8 +46,16 @@ function Del(e){
 
 function FocusSet(elm){ var t = Get(elm); if ( t ) { t.focus(); } }
 
-// Local and Sessions Store
+// Simple cookie, Local and Sessions Store
 
+function CookieSet(a){
+    document.cookie = a;
+}
+function CookieGet(){
+    var a = document.cookie;
+    
+    return a;
+}
 function StoreSet(a,b){ window.localStorage.setItem(a,b); }
 
 function StoreGet(a) { 
@@ -52,12 +64,25 @@ function StoreGet(a) {
 }
 
 function SessSet(a,b){   
-    
     window.sessionStorage.setItem(a,b);
-    
 }
 
 function SessGet(a){ 
     var e=window.sessionStorage.getItem(a);
     if (e) {return e; }else { return ""; }
+}
+
+// Fade animation
+function FadeIn(e){
+    var a = document.getElementById(e);
+    var c = a.getAttribute("class");
+    var q = c.replace("transparent","untransparent");
+    a.setAttribute("class",q);
+}
+
+function FadeOut(e){
+    var a = document.getElementById(e);
+    var c = a.getAttribute("class");
+    var q = c.replace("untransparent","transparent");
+    a.setAttribute("class",q);
 }
