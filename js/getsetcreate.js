@@ -86,3 +86,4 @@ function FadeOut(e){
     var q = c.replace("untransparent","transparent");
     a.setAttribute("class",q);
 }
+
