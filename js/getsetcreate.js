@@ -3,7 +3,6 @@
  Author      : e-x @ github
  */
 
-
 // Create element with setted type,id and class
  
 function Create(e,id,cls){    
